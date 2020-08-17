@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    color: #4b5d67;
+    padding:2rem 10rem;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+/* genral classes */
+.center-align{
+    text-align: center;
+}
+
+.text-highlight{
+    color:#ff5f40;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n){
+    background-color: lightgrey;
+}
+
+section:nth-child(2n+1){
+    background-color: aliceblue;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    display:inline-block;
+    padding-top: 10px;
+    margin-right: 0.54rem;
+    color: #2857a4;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-blue{
+background-color: #2857a4;
+}
+
+.mb-red{
+    background-color: #e11d74;
+}
+
+.mb-green{
+    background-color:#00bdaa;
+}
+
+.mb-orange{
+    background-color:#fc7e2f;
+}
+
+/* percent-classes */
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+
+.seventy-five-percent{
+    width: 75%;
+    height: inherit;
+}
+
+.ninty-percent{
+    width: 90%;
+    height: inherit;
+}
+/* body header */
+#body-header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(static/laptop.jpg);
+    opacity: 0.9;
+    height: 75vh;
+    /* width: 100vh; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* navigar=tion rules.. */
+.hr-list{
+    margin: 0px;
+    text-decoration: none;
+}
+.hr-list li{
+    margin: auto;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.hr-list li a{
+    color: aliceblue;
+    text-decoration: none;
+    
+}
+
+.nav-menu li {
+    padding: 20px;
+}
+
+.nav-menu li a:hover{
+       border-bottom: 1px solid white;
+       color: azure;
+       transition: color 0.5s, border 0.5s; 
+}
+
+/* my name */
+#name{
+    margin-top:150px;
+    font-size: 3rem;
+    letter-spacing: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+/* social icons */
+.social-icons li{
+    padding:10px;
+}
+
+.social-icons li a i{
+    border-radius: 50%;
+    padding: 10px;    
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px grey;
+    list-style: none;
+    text-decoration-style: none;
+}
+
+/* about section */
+#about{
+    height: auto;
+    width: 100%;
+    
+}
+
+#about-text{
+    width: 70%;
+}
+#my-image img{
+    height: 290x;
+    width: 290px;
+    border-radius: 50%;
+    margin-top: -127px;
+    position: relative;   
+    box-shadow: 0px 0px 6px 4px grey;
+}
+
+/* about section */
+.skills-display{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden; 
+    align-content: center;
+    /* margin: 30px; */
+}
+
+.skill-progress{
+   width: 15rem;
+   height:2.5rem;
+   /* margin-top: 2rem; */
+   margin:25px;
+   background-color: lightblue;
+   border-radius: 22px;
+   box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+   
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name{
+    position: absolute;    
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    position:relative;
+    top:12px;
+    left: 80px;
+}
+
+
+/* experience */
