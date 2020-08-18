@@ -46,7 +46,7 @@ section:nth-child(2n+1){
 }
 
 .section-heading span{
-    font-size: 40px;
+    font-size: 30px;
     display:inline-block;
     padding-top: 10px;
     margin-right: 0.54rem;
@@ -214,6 +214,114 @@ background-color: #2857a4;
 }
 
 
+/* timeline */
+.timeline{
+    width: 70%;
+    /* height:auto; */
+    /* border:2px solid black; */
+    position: relative;
+}
+
+.timeline-box{
+    width: 40%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+    margin: 5px;
+    position: relative;
+}
+
+.timeline-box:nth-child(2n){
+    position: relative;
+    left:53%;
+}
+
+.timeline-divider{
+    width: 0;
+    position: absolute;
+    height: 67%;
+    top: 12%;
+    left:50%;
+    border: 2px dashed #776d8a;
+}
+
+.timeline-traveller{
+    position: sticky;
+    top:5%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    border-radius: 50%;
+    background-color: #4b5d67;
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    right: -26%;
+    top: 30%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    border-radius: 50%;
+    background-color: #4b5d67;
+    height: 0.8rem;
+    width: 0.8rem;
+    position: absolute;
+    left: -10%;
+    top: 31%;
+    z-index: 1;
+}
+
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    /* position: absolute; */
+    width: 50px;
+    /* height: 30px; */
+    display: block;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
 /* experience */
 
 
@@ -375,4 +483,22 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+
+
+
+.m0 {
+    margin: 0;
+}
+
+.mb75px {
+    margin-bottom: 75px;
+}
+
+.mb50px {
+    margin-bottom: 50px;
+}
+.m-blue {
+    color: #2857a4;
 }
