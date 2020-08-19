@@ -4,6 +4,10 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
 h1,h2,h3,h4,h5,h6,p{
     font-family: 'Montserrat', sans-serif;
 }
@@ -17,6 +21,10 @@ h1,h2,h3,h4,h5,h6,p{
 /* genral classes */
 .center-align{
     text-align: center;
+}
+
+.text-right{
+    text-align: right;
 }
 
 .text-highlight{
@@ -105,6 +113,51 @@ background-color: #2857a4;
 }
 
 
+/* hamburger  */
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+.bars i {
+    font-size: 1.5rem;
+}
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: transparent;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+.dropdown-list ul{
+    margin: 0.1rem 0.2rem;
+	padding: 0px 0.8rem;
+	text-align: left;
+}
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+.dropdown-list li{
+	margin: 0.2rem 0px;
+	font-size: 0.2rem;
+	font-weight: 100;
+}
+
+
+.no-list-style{
+	list-style: none;
+}
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+.no-list-style li a{
+	text-decoration: none;
+	color: white;
+}
+
 /* navigar=tion rules.. */
 .hr-list{
     margin: 0px;
@@ -113,7 +166,7 @@ background-color: #2857a4;
 .hr-list li{
     margin: auto;
     display: inline-block;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .hr-list li a{
@@ -325,6 +378,67 @@ background-color: #2857a4;
 }
 /* experience */
 
+@media only screen and (max-width: 572px) {
+	#my-image img{
+		width: 8rem;
+		height: 8rem;
+		margin-top: -10vh;
+	}
+
+    #about-text p{
+        width: 100%;
+        font-size: 20px;
+        font-weight: normal;
+        padding:0;
+    }
+
+	.portfolio-details p {
+		font-size: 1.1rem;
+	}
+
+    .timeline-box{
+		width: 90%;
+		left: 10%;
+	}
+	.timeline-divider{
+		left: 5%;
+	}
+	.timeline-box:nth-child(2n){
+		left: 10%;
+	}
+	.timeline-box:nth-child(2n+1)::after{
+		left: -6%;
+	}
+	.timeline-box:nth-child(2n)::after{
+		left: -6%;
+	}
+	
+    .bars {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }     
+    
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 100%;
+        margin: auto;
+    }
+
+    #contact-form-container {
+        width: 100%;
+        margin:10%;
+    }
+
+}
 
 
 
@@ -393,6 +507,9 @@ background-color: #2857a4;
 
 #contact-container {
     display: flex;
+    flex-flow: row;
+    flex-direction: space-evenly;
+    flex-wrap: wrap;
 }
 
 #my-details-container {
