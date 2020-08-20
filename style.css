@@ -116,8 +116,8 @@ background-color: #2857a4;
 /* hamburger  */
 .bars{
     color: white;
-    margin: 0;
-    margin-right: 5%;
+    padding: 5%;
+    /* margin-top: 5%; */
     display: none;
 }
 .bars i {
@@ -137,12 +137,13 @@ background-color: #2857a4;
 .dropdown-menu:hover .dropdown-list{
     display: block;
     position: absolute;
-    right: 3%;
+    left: 3%;
 }
 .dropdown-list li{
 	margin: 0.2rem 0px;
 	font-size: 0.2rem;
-	font-weight: 100;
+    font-weight: 100;
+    padding: 5px;
 }
 
 
@@ -277,7 +278,7 @@ background-color: #2857a4;
 
 .timeline-box{
     width: 40%;
-    min-height: 150px;
+    min-height: 160px;
     /* border: 2px solid black; */
     margin: 5px;
     position: relative;
@@ -387,7 +388,7 @@ background-color: #2857a4;
 
     #about-text p{
         width: 100%;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: normal;
         padding:0;
     }
@@ -398,19 +399,25 @@ background-color: #2857a4;
 
     .timeline-box{
 		width: 90%;
-		left: 10%;
+		left: 20%;
 	}
 	.timeline-divider{
 		left: 5%;
-	}
+    }
+    
+    #education .timeline-divider{
+        height: 65%;
+        top:11%
+    }
+    
 	.timeline-box:nth-child(2n){
-		left: 10%;
+		left: 20%;
 	}
 	.timeline-box:nth-child(2n+1)::after{
-		left: -6%;
+		left: -20%;
 	}
 	.timeline-box:nth-child(2n)::after{
-		left: -6%;
+		left: -20%;
 	}
 	
     .bars {
@@ -420,9 +427,10 @@ background-color: #2857a4;
         display: none;
     }     
     
-    #contact-form {
+
+    /* #contact-form {
         margin-left: 0%;
-    }
+    } */
 
     #contact-container {
         flex-wrap: wrap;
@@ -430,8 +438,44 @@ background-color: #2857a4;
 
     #my-details-container {
         width: 100%;
-        margin: auto;
+        margin:auto ;
     }
+
+    #my-details-container h3 {
+        color: white;
+        font-weight: 550;
+        font-size: 1.2rem;
+        margin-left: 60%;
+        width: 100%;
+    }
+        
+    #my-details-container p {
+        color: #d9dcdd;
+        font-size: 0.9rem;
+        margin-left: 60%;
+        width: 100%;
+    }
+    
+    .my-details-info-container {
+        margin-bottom: 20px;
+        color: #d9dcdd;
+        font-size: 1rem;
+        margin-left: 60%;
+        width: 100%;
+    }
+    
+    .my-details-info-container span {
+        margin-left: 0.4rem;
+        margin-left: 60%;
+        width: 100%;
+    }
+    
+    .my-details-info-container i {
+        color: white;
+        margin-left: 10%;
+        width: 100%;
+    }
+    
 
     #contact-form-container {
         width: 100%;
